@@ -13,7 +13,8 @@
   <title>Custom Materialize Theme</title>
 </head>
 
-<body>
+<body id="home">
+  <div class="navbar-fixed">
   <nav class="blue lighten-1">
     <div class="container">
       <div class="nav-wrapper">
@@ -29,17 +30,18 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
-      <ul class="side-nav" id="mobile-nav">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#search">Search</a></li>
-          <li><a href="#popular">Popular Places</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
     </div>
   </nav>
+  </div>
+  <ul class="side-nav" id="mobile-nav">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#search">Search</a></li>
+      <li><a href="#popular">Popular Places</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>  
   <!-- Section slider -->
-  <section class="slider">
+  <section  class="slider">
     <ul class="slides">
       <li>
         <img src="./img/holiday3.jpeg" alt="">
@@ -69,7 +71,7 @@
     </ul>
   </section>
   <!-- Search section -->
-  <section class="section-search blue lighten-1 white-text center">
+  <section id="search" class="section-search blue lighten-1 white-text center">
     <div class="container">
       <div class="row">
         <div class="col s12">
@@ -82,7 +84,7 @@
     </div>
   </section>
  <!-- Icon section -->
- <section class="section-icons grey lighten-4 center">
+ <section id="popular" class="section-icons grey lighten-4 center">
    <div class="container">
      <div class="row">
        <div class="col s12 m4">
@@ -115,6 +117,177 @@
      </div>
    </div>
  </section>
+ <!-- Most wanted -->
+ <section id="gallery" class="section-most-wanted">
+   <div class="container">
+     <div class="row">
+       <h4 class="center">
+         <span class="blue-text lighten-1">Most</span>Wanted
+       </h4>
+       <div class="col s12 m3">
+         <div class="card">
+           <div class="card-image">
+             <img src="img/italy.jpeg" alt="">
+             <span class="card-title">Venice,Italy</span>
+           </div>
+           <div class="card-content">
+             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus ut commodi nam quos qui! Magni.</p>
+           </div>
+         </div>
+       </div>
+       <div class="col s12 m3">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/greece1.jpeg" alt="">
+              <span class="card-title">Athene,Greece</span>
+            </div>
+            <div class="card-content">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus ut commodi nam quos qui! Magni.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m3">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/mexico.jpeg" alt="">
+                <span class="card-title">Mexico</span>
+              </div>
+              <div class="card-content">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus ut commodi nam quos qui! Magni.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m3">
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/romania.jpeg" alt="">
+                  <span class="card-title">Romania</span>
+                </div>
+                <div class="card-content">
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus ut commodi nam quos qui! Magni.</p>
+                </div>
+              </div>
+            </div>
+     </div>
+     <div class="row">
+       <div class="col s12 center">
+         <a href="#contact" class="btn btn-large grey darken-3 ">
+           <i class="material-icons left">send</i>Contact for Booking
+         </a>
+       </div>
+     </div>
+   </div>
+ </section>
+ <!-- Section Fallow -->
+ <section class="section-follow white-text center blue lighten-1">
+   <div class="container">
+     <div class="row">
+       <div class="col s12">
+         <h4>Follow us</h4>
+         <p>Follow us on social media for special deals</p>
+         <a href="https://facebook.com" target="_blank" class="white-text">
+          <i class="fab fa-facebook fa-4x"></i>
+        </a>
+        <a href="https://linkedin.com" target="_blank" class="white-text">
+          <i class="fab fa-linkedin fa-4x"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" class="white-text">
+          <i class="fab fa-twitter fa-4x"></i>
+        </a>
+       </div>
+     </div>
+   </div>
+ </section>
+ <!-- Section gallery -->
+ <section class="section-gallery">
+   <div class="container">
+     <h4 class="center">
+       Photo <span class="blue-text lighten-1">Gallery</span>
+     </h4>
+     <div class="row">
+       <div class="col s12 m3">
+         <img class="materialboxed responsive-img" src="https://source.unsplash.com/1600x900/?beach" alt="">
+       </div>
+       <div class="col s12 m3">
+          <img class="materialboxed responsive-img" src="https://source.unsplash.com/1600x900/?travel" alt="">
+        </div>
+        <div class="col s12 m3">
+            <img class="materialboxed responsive-img" src="https://source.unsplash.com/1600x900/?nature" alt="">
+          </div>
+          <div class="col s12 m3">
+              <img class="materialboxed responsive-img" src="https://source.unsplash.com/1600x900/?girls" alt="">
+            </div>
+     </div>
+     <div class="row">
+        <div class="col s12 m3">
+          <img class="materialboxed responsive-img" src="https://source.unsplash.com/1600x900/?nature,beach" alt="">
+        </div>
+        <div class="col s12 m3">
+           <img class="materialboxed responsive-img" src="https://source.unsplash.com/1600x900/?travel,girl" alt="">
+         </div>
+         <div class="col s12 m3">
+             <img class="materialboxed responsive-img" src="https://source.unsplash.com/1600x900/?nature,girl" alt="">
+           </div>
+           <div class="col s12 m3">
+               <img class="materialboxed responsive-img" src="https://source.unsplash.com/1600x900/?girls,travel" alt="">
+             </div>
+      </div>
+      <div class="row">
+          <div class="col s12 m3">
+            <img class="materialboxed responsive-img" src="https://source.unsplash.com/1600x900/?travel,beach" alt="">
+          </div>
+          <div class="col s12 m3">
+             <img class="materialboxed responsive-img" src="https://source.unsplash.com/1600x900/?city,girl" alt="">
+           </div>
+           <div class="col s12 m3">
+               <img class="materialboxed responsive-img" src="https://source.unsplash.com/1600x900/?boy,girl" alt="">
+             </div>
+             <div class="col s12 m3">
+                 <img class="materialboxed responsive-img" src="https://source.unsplash.com/1600x900/?nature,travel" alt="">
+               </div>
+        </div>
+   </div>
+ </section>
+ <!-- Contact -->
+ <section id="contact" class="section-contact">
+   <div class="container">
+     <div class="row">
+       <div class="col s12 m6">
+         <div class="card-panel blue white-text center">
+            <i class="material-icons medium">email</i>
+            <h4>Contact Us</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perspiciatis corrupti sed! Autem aut animi tempore ad, eligendi repudiandae laboriosam.</p>
+         </div>
+       </div>
+       <div class="col s12 m6">
+         <div class="card-panel grey lighten-3">
+           <h5>Please fill out this form</h5>
+           <div class="input-field">
+             <input type="text" placeholder="Name" id="name">
+             <label for="name">Name</label>
+           </div>
+           <div class="input-field">
+              <input type="email" placeholder="Email" id="email">
+              <label for="email">Email</label>
+            </div>
+            <div class="input-field">
+                <input type="text" placeholder="Phone" id="phone">
+                <label for="phone">Phone</label>
+              </div>
+              <div class="input-field">
+                  <textarea class="materialize-textarea" placeholder="Message" id="message"></textarea>
+                  <label for="message">Message</label>
+                </div>
+                <input type="submit" value="Submit" class="btn blue lighten-1">
+         </div>
+       </div>
+     </div>
+     
+   </div>
+ </section>
+ <footer class="section blue lighten-1 white-text center">
+   <p class="flow-text">TomTravell  &copy;</p>
+ </footer>
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
